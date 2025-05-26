@@ -52,6 +52,23 @@ size = 11
 family = "Hack Nerd Font"
 style = "Regular"
 
+[font.bold]
+family = "Hack Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "Hack Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "Hack Nerd Font"
+style = "Bold Italic"
+
+# Увеличенный размер истории для большего скроллбека
+[scrolling]
+history = 20000
+multiplier = 3
+
 [[keyboard.bindings]]
 action = "SpawnNewInstance"
 key = "N"
@@ -61,6 +78,17 @@ mods = "Command"
 chars = "\u0015"
 key = "Back"
 mods = "Super"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
+
 
 [[keyboard.bindings]]
 chars = "\u001Bb"
@@ -104,8 +132,25 @@ startup_mode = "Maximized"
 x = 15
 y = 15
 
+# Улучшенные настройки выделения и буфера обмена
 [selection]
 save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+# Настройки курсора
+[cursor]
+style = {shape = "Block", blinking = "On"}
+blink_interval = 300
+unfocused_hollow = true
+
+# Настройки производительности
+[debug]
+render_timer = false
+persistent_logging = false
+
+# Дополнительные настройки для улучшения отображения
+[colors]
+draw_bold_text_with_bright_colors = true
 
 [terminal.shell]
 program = "wsl"
@@ -115,3 +160,8 @@ args = [
     "--cd",
     "~"
 ]
+
+
+
+
+
