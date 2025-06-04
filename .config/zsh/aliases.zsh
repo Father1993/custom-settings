@@ -36,7 +36,7 @@ gcom() {
         echo "Ошибка: Нет сообщения для коммита"
         return 1
     fi
-    git commit -m "$*"
+    git commit -m "$@"
 }
 
 # Password generator
