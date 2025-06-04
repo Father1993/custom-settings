@@ -39,6 +39,7 @@ gcom() {
     git commit -m "$*"
 }
 
+
 # Password generator
 pwgen() {
   local len=${1:-20}
