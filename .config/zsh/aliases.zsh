@@ -10,6 +10,7 @@ alias cdh=cd /home/father
 # Git
 alias gdd='git add .'
 alias gpushd='git push origin dev'
+alias gpushm='git push origin master'
 alias grep='grep --color=auto'
 alias gst='git status'
 alias gpull='git checkout master && git fetch && git pull && git checkout dev && git merge master && git push origin dev'
