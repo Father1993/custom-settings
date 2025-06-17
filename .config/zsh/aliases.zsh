@@ -29,6 +29,11 @@ alias zegrep='zegrep --color=auto'
 alias zfgrep='zfgrep --color=auto'
 alias zgrep='zgrep --color=auto'
 
+
+# History
+alias hist='history | grep'
+alias h='history'
+
 #alias pbcopy="win32yank.exe -i"
 
 # Функия для коммита без ковычек использя alias
