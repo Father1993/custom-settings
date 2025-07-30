@@ -45,7 +45,7 @@ git clone https://github.com/Father1993/custom-settings.git
 
 ```bash
 # Установка основных инструментов
-sudo apt install -y zsh git gpg pass zip unzip curl wget tmux gcc bsdmainutils htop fzf bat ripgrep build-essential neofetch
+sudo apt install -y zsh git gpg pass zip unzip curl wget tmux gcc bsdmainutils htop fzf bat ripgrep build-essential neofetch meson
 
 # Создание символической ссылки для bat
 sudo ln -s $(which batcat) /usr/local/bin/bat
@@ -119,6 +119,18 @@ mkdir -p ~/.config/neofetch
 
 # Копирование конфигурации Neofetch
 cp custom-settings/.config/neofetch/config.conf ~/.config/neofetch/
+```
+
+### Настройка Facad
+
+```bash
+git clone https://github.com/yellow-footed-honeyguide/facad.git
+cd facad
+meson setup build && meson compile -C build
+# now facad binary in build dir
+
+# for system-wide installation (may require elevated privileges like `sudo`):
+cd build && sudo ninja install
 ```
 
 ### Настройка Neovim
