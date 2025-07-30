@@ -45,10 +45,7 @@ git clone https://github.com/Father1993/custom-settings.git
 
 ```bash
 # Установка основных инструментов
-sudo apt install -y \
-    zsh git gpg pass zip unzip \
-    curl wget tmux gcc bsdmainutils htop fzf bat ripgrep build-essential \
-    neofetch
+sudo apt install -y zsh git gpg pass zip unzip curl wget tmux gcc bsdmainutils htop fzf bat ripgrep build-essential neofetch
 
 # Создание символической ссылки для bat
 sudo ln -s $(which batcat) /usr/local/bin/bat
