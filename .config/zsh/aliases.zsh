@@ -21,6 +21,10 @@ alias aipush='python CommitPilot/auto_commit.py'
 alias smk='ssh root@45.153.68.101'
 alias smkbit='ssh bitrix@45.153.68.101'
 alias uroven='ssh devuser@5.129.203.17'
+alias kargo='ssh bitrix@5.129.192.159'
+alias kargoroot='ssh root@5.129.192.159'
+alias durv='ssh devuser@5.129.203.177'
+alias urv='ssh produser@93.183.82.23'
 
 # Others
 alias xzegrep='xzegrep --color=auto'

@@ -101,6 +101,48 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# CUSTOM HISTORY
+HISTFILE=~/.histfile                 # Location of the history file
+HISTSIZE=10000                       # Maximum events in internal history
+SAVEHIST=10000                       # Maximum events in history file
+setopt HIST_IGNORE_ALL_DUPS          # Remove older duplicate commands
+setopt INC_APPEND_HISTORY            # Add commands to history immediately
+setopt EXTENDED_HISTORY              # Save timestamp and duration
+setopt HIST_EXPIRE_DUPS_FIRST        # Remove duplicates first when trimming
+setopt HIST_FIND_NO_DUPS             # Don't display duplicates when searching
+setopt HIST_IGNORE_SPACE             # Ignore commands starting with space
+setopt SHARE_HISTORY                 # Share history between sessions
+HISTORY_IGNORE='(vh|s|e|vz|n|d)'     # Ignore specific short commands
+
+# Create and open custom history file
+function vh {
+    # Create a temporary file for initial processing
+    temp_file=$(mktemp /tmp/histfile.XXXXXX)
+    # Create a temporary file for viewing
+    temp_view_file=$(mktemp /tmp/histfile_view.XXXXXX)
+    
+    # Process the history file using awk
+    awk -F':' '
+    # If line already starts with date-time format, print as is and move to next line
+    /^[0-9]{2}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}/ { print; next }
+    {
+        # Extract command from third field
+        cmd=$3
+        # Remove leading "0;" if present
+        sub(/^0;/, "", cmd)
+        # Format timestamp to human-readable date
+        date=strftime("%y-%m-%d %H:%M", $2)
+        # Print formatted date and command
+        print date "| " cmd
+    }' ~/.histfile > "$temp_file" && mv "$temp_file" "$temp_view_file"
+
+    # Open processed history in vim for viewing
+    vim "$temp_view_file"
+    # Clean up temporary file after viewing
+    rm "$temp_view_file"
+}
+
 alias n=nvim
 export EDITOR=vim
 source $HOME/.config/zsh/env.zsh
