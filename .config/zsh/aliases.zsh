@@ -33,7 +33,7 @@ alias xzgrep='xzgrep --color=auto'
 alias zegrep='zegrep --color=auto'
 alias zfgrep='zfgrep --color=auto'
 alias zgrep='zgrep --color=auto'
-
+alias gitl='git log --graph --format="%C(yellow)%h%C(reset) %s %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)"'
 
 # History
 alias hist='history | grep'
