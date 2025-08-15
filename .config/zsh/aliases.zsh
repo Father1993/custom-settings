@@ -6,6 +6,7 @@ alias myip='curl ifconfig.me'
 alias pingg='ping google.com'
 alias rm='rm -i'
 alias cdh=cd /home/father
+alias f='facad'
 
 # Git
 alias gdd='git add .'
