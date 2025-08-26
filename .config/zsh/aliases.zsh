@@ -41,8 +41,6 @@ alias gitl='git log --graph --format="%C(yellow)%h%C(reset) %s %C(magenta)%cr%C(
 alias hist='history | grep'
 alias h='history'
 
-#alias pbcopy="win32yank.exe -i"
-
 # Функия для коммита без ковычек использя alias
 gcom() {
     if [[ $# -eq 0 ]]; then
