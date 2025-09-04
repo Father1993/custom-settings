@@ -1,4 +1,4 @@
-alias n=nvim
+alias n=vim
 alias open=explorer.exe
 alias cp='cp -i'
 alias mv='mv -i'
