@@ -1,0 +1,49 @@
+# Устанавливаем Ctrl+a как префикс вместо Ctrl+b
+unbind C-b
+set-option -g prefix C-a
+bind-key C-a send-prefix
+
+# Быстрое перемещение между окнами
+bind -n C-Left previous-window
+bind -n C-Right next-window
+
+# Перемещение между панелями
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+# Переключение на последнее окно
+bind Tab last-window
+set -g base-index 1
+setw -g pane-base-index 1
+
+# Цветовая схема
+set-option -g status-style "bg=#1e1e2e,fg=#cdd6f4"
+
+# Левая часть
+set -g status-left "#[fg=#89dceb,bg=#1e1e2e] #S #[default]"
+
+# Правая часть
+set -g status-right "#[fg=#f38ba8] %Y-%m-%d #[fg=#a6e3a1] %H:%M #[fg=#f9e2af] #h "
+
+# Разделители окон
+set-window-option -g window-status-current-format "#[fg=#1e1e2e,bg=#89b4fa] #I:#W #[default]"
+set-window-option -g window-status-format "#[fg=#cdd6f4] #I:#W "
+
+
+# List of plugins
+
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'jimeh/tmux-themepack'
+set -g @themepack 'powerline/dark/blue'
+
+# Other examples:
+# set -g @plugin 'github_username/plugin_name'
+# set -g @plugin 'github_username/plugin_name#branch'
+# set -g @plugin 'git@github.com:user/plugin'
+# set -g @plugin 'git@bitbucket.com:user/plugin'
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm' 
