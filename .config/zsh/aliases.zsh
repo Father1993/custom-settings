@@ -18,6 +18,12 @@ alias gpull='git checkout master && git fetch && git pull && git checkout dev &&
 alias aicom='python CommitPilot/auto_commit.py -c'
 alias aipush='python CommitPilot/auto_commit.py'
 
+# Docker
+alias docup='docker compose down -v && docker compose build --no-cache && docker compose up -d'
+alias ddown='docker compose down'
+alias dup='docker compose up -d'
+alias dbuild='docker compose build --no-cache'
+
 # Servers
 alias smk='ssh root@45.153.68.101'
 alias smkbit='ssh bitrix@45.153.68.101'
