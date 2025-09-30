@@ -7,6 +7,7 @@ alias pingg='ping google.com'
 alias rm='rm -i'
 alias cdh=cd /home/father
 alias f='facad'
+alias cls='clear'
 
 # Git
 alias gdd='git add .'
