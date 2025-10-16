@@ -35,6 +35,7 @@ alias durv='ssh devuser@5.129.203.177'
 alias urv='ssh produser@93.183.82.23'
 alias n8='ssh admin@89.169.3.229'
 alias n8m='ssh root@103.88.242.83'
+alias rabb='ssh root@176.98.178.108'
 
 # Others
 alias xzegrep='xzegrep --color=auto'
