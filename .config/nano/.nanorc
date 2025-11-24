@@ -1,1 +1,114 @@
+# === ОСНОВНЫЕ НАСТРОЙКИ ===
+set softwrap
+set atblanks
+set autoindent
+set trimblanks
+set tabsize 4
+set tabstospaces
+extendsyntax makefile tabgives " "
+set cutfromcursor
+set zap
+set smarthome
+set nonewlines
+
+# === РЕДАКТОР ===
+set minibar
+set indicator
 set linenumbers
+set positionlog
+set constantshow
+set stateflags
+set mouse
+set backup
+set historylog
+set multibuffer
+
+# === ЦВЕТА В СТИЛЕ ХАКЕРА ===
+
+# Основные цвета матрицы
+set titlecolor bold,green,black
+set statuscolor green,black
+set errorcolor bold,white,red
+set selectedcolor black,green
+set stripecolor green,black
+set scrollercolor green,black
+set numbercolor brightmagenta,black
+set keycolor brightgreen,black
+set functioncolor brightgreen,black
+set minicolor bold,green,black
+set promptcolor bold,brightgreen,black
+
+# Подсветка синтаксиса для разных языков
+syntax "sh" "\.sh$" "\.bash$" "\.zsh$"
+color green "^.*$"
+
+syntax "python" "\.py$"
+color brightgreen "^(import|from|def|class|return|if|elif|else|for|while|try|except|as)$"
+color green "\".*\""
+color cyan "#.*$"
+color yellow "\b[0-9]+\b"
+
+syntax "javascript" "\.js$" "\.ts$"
+color brightgreen "^(function|const|let|var|return|if|else|for|while|try|catch|class|export|import)$"
+color green "\".*\""
+color cyan "//.*$"
+
+syntax "json" "\.json$"
+color green "\".*\""
+color yellow ":"
+color cyan "true|false|null"
+color brightwhite "[0-9]+"
+
+syntax "html" "\.html$" "\.htm$"
+color brightgreen "<[^>]*>"
+color green "\".*\""
+color cyan "&[^;]+;"
+
+syntax "css" "\.css$"
+color brightgreen "^(.*)\{"
+color green ":.*;"
+color cyan "//.*$"
+
+syntax "xml" "\.xml$"
+color brightgreen "<[^>]*>"
+color green "\".*\""
+
+# C/C++
+syntax "c" "\.c$" "\.cpp$" "\.h$"
+color brightgreen "^(if|else|for|while|return|switch|case|break|continue|goto)$"
+color green "//.*$"
+color cyan "/\*.*\*/"
+
+# Markdown
+syntax "markdown" "\.md$"
+color brightgreen "^#.*"
+color green "\*.*\*"
+color cyan "`[^`]*`"
+
+# YAML
+syntax "yaml" "\.yml$" "\.yaml$"
+color brightgreen ":"
+color green "\".*\""
+color cyan "#.*$"
+
+# SQL
+syntax "sql" "\.sql$"
+color brightgreen "^(SELECT|INSERT|UPDATE|DELETE|FROM|WHERE|JOIN|CREATE|TABLE|DROP)$"
+color green "--.*$"
+
+# Dockerfile
+syntax "docker" "Dockerfile.*" "\.dockerfile$"
+color brightgreen "^(FROM|RUN|CMD|ENTRYPOINT|EXPOSE|ENV|ARG|WORKDIR)$"
+color green "#.*$"
+
+# Makefile
+syntax "makefile" "Makefile.*" "\.mk$"
+color brightgreen "^[A-Z_]+:"
+color green "#.*$"
+
+# === ДОПОЛНИТЕЛЬНЫЕ НАСТРОЙКИ ===
+set boldtext
+set locking
+set casesensitive
+set regexp
+set numbercolor brightyellow,black
