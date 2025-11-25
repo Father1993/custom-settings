@@ -8,6 +8,7 @@ alias rm='rm -i'
 alias cdh=cd /home/father
 alias f='facad'
 alias cls='clear'
+alias cdd='cd /home/father/download'
 
 # Git
 alias gdd='git add .'
