@@ -118,8 +118,7 @@ HISTORY_IGNORE='(vh|s|e|vz|n|d)'     # Ignore specific short commands
 function vh {
     temp_file=$(mktemp /tmp/histfile.XXXXXX)
     temp_view_file=$(mktemp /tmp/histfile_view.XXXXXX)
-    
-    # Process the history file using awk
+
     awk -F':' '
     # If line already starts with date-time format, print as is and move to next line
     /^[0-9]{2}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}/ { print; next }
