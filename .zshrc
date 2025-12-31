@@ -116,9 +116,7 @@ HISTORY_IGNORE='(vh|s|e|vz|n|d)'     # Ignore specific short commands
 
 # Create and open custom history file
 function vh {
-    # Create a temporary file for initial processing
     temp_file=$(mktemp /tmp/histfile.XXXXXX)
-    # Create a temporary file for viewing
     temp_view_file=$(mktemp /tmp/histfile_view.XXXXXX)
     
     # Process the history file using awk
