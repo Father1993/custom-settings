@@ -71,7 +71,7 @@ git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/theme
 Для корректного отображения иконок и символов в терминале рекомендуется установить Hack Nerd Font:
 
 ```bash
-# Debian/Ubuntu
+# GNU/Linux
 sudo apt install -y fonts-hack-ttf
 
 # Или скачайте шрифт с официального сайта:
