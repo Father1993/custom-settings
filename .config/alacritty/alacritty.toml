@@ -1,6 +1,5 @@
 [general]
 import = [
-
     "C:\\Users\\sterx\\AppData\\Roaming\\alacritty\\themes\\themes\\kanagawa_dragon.toml"
 #
 # DOWNLOAD FROM:
@@ -85,28 +84,22 @@ action = "Copy"
 key = "C"
 mods = "Control|Shift"
 
-
-[[keyboard.bindings]]
-key = "V"
-mods = "Super"
-action = "Paste"
-
-
 [[keyboard.bindings]]
 action = "Paste"
 key = "V"
 mods = "Control|Shift"
 
+# Закомментируйте или удалите эти две строки:
+# [[keyboard.bindings]]
+# chars = "\u001Bb"
+# key = "Left"
+# mods = "Alt"
 
-[[keyboard.bindings]]
-chars = "\u001Bb"
-key = "Left"
-mods = "Alt"
+# [[keyboard.bindings]]
+# chars = "\u001Bf"
+# key = "Right"
+# mods = "Alt"
 
-[[keyboard.bindings]]
-chars = "\u001Bf"
-key = "Right"
-mods = "Alt"
 
 [[keyboard.bindings]]
 chars = "\u0000"
@@ -135,6 +128,7 @@ decorations = "Full"
 dynamic_padding = true
 opacity = 0.7
 startup_mode = "Windowed"
+title = "father"
 
 [window.padding]
 x = 15
@@ -160,12 +154,13 @@ persistent_logging = false
 [colors]
 draw_bold_text_with_bright_colors = true
 
-# Запуск WSL
 [terminal.shell]
 program = "wsl"
 args = [
     "-d",
     "Debian",
-    "--cd",
-    "~"
+	"--cd",
+	"~",
+	"tmux"
 ]
+
