@@ -1,3 +1,4 @@
+#Navigation
 alias n=vim
 alias open=explorer.exe
 alias cp='cp -i'
@@ -5,10 +6,14 @@ alias mv='mv -i'
 alias myip='curl ifconfig.me'
 alias pingg='ping google.com'
 alias rm='rm -i'
-alias cdh=cd /home/father
-alias f='facad'
+alias cdh='cd /home/father'
 alias cls='clear'
 alias cdd='cd /home/father/download'
+alias taf='tail -f'
+alias t='tmux'
+
+#Soft
+alias f='facad'
 
 # Git
 alias gdd='git add .'
