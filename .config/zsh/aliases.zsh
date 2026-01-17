@@ -12,6 +12,13 @@ alias cdd='cd /home/father/download'
 alias taf='tail -f'
 alias t='tmux'
 
+# CommitPilot
+alias acommit='python "/c/Users/Anri/Desktop/git/CommitPilot/auto_commit.py"'
+alias acommit-dev='python "/c/Users/Anri/Desktop/git/CommitPilot/auto_commit.py" -b dev'
+alias acm='python "/c/Users/Anri/Desktop/git/CommitPilot/auto_commit.py" -c'
+alias acommit-main='python "/c/Users/Anri/Desktop/git/CommitPilot/auto_commit.py" -b main'
+alias acommit-master='python "/c/Users/Anri/Desktop/git/CommitPilot/auto_commit.py" -b master'
+
 #Soft
 alias f='facad'
 
