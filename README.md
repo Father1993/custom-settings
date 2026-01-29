@@ -80,22 +80,22 @@ sudo apt install -y fonts-hack-ttf
 
 Hack Nerd Font — это модификация шрифта Hack (версия 3.003), оптимизированная для программирования. Особенности:
 
--   Чёткий дизайн с хорошей читаемостью даже при малых размерах
--   Чётко различимый нуль с точкой внутри
--   Короткие нижние выносные элементы для более компактного отображения кода
--   Основан на работе, проделанной для Bitstream Vera и DejaVu
--   Включает множество дополнительных иконок и символов для разработчиков
+- Чёткий дизайн с хорошей читаемостью даже при малых размерах
+- Чётко различимый нуль с точкой внутри
+- Короткие нижние выносные элементы для более компактного отображения кода
+- Основан на работе, проделанной для Bitstream Vera и DejaVu
+- Включает множество дополнительных иконок и символов для разработчиков
 
 ### Настройка ZSH и Oh-My-ZSH
 
 ```bash
+# Установка Oh-My-ZSH
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # Копирование конфигурационных файлов ZSH
 mkdir -p ~/.config/zsh
 cp -r custom-settings/.config/zsh/* ~/.config/zsh/
 cp custom-settings/.zshrc ~/.zshrc
-
-# Установка Oh-My-ZSH
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Добавление конфигурации в .zshrc
 echo "source \$HOME/.config/zsh/env.zsh" >> ~/.zshrc
@@ -197,28 +197,26 @@ custom-settings/
 
 #### ZSH
 
--   `.zshrc` - основной конфигурационный файл ZSH, настраивающий тему, плагины и базовые параметры
--   `.config/zsh/aliases.zsh` - пользовательские сокращения (алиасы) для часто используемых команд
--   `.config/zsh/env.zsh` - настройки переменных окружения
+- `.zshrc` - основной конфигурационный файл ZSH, настраивающий тему, плагины и базовые параметры
+- `.config/zsh/aliases.zsh` - пользовательские сокращения (алиасы) для часто используемых команд
+- `.config/zsh/env.zsh` - настройки переменных окружения
 
 #### Терминал Alacritty
 
--   `.config/alacritty/alacritty.toml` - конфигурация терминального эмулятора Alacritty с настройками темы, шрифтов и горячих клавиш
+- `.config/alacritty/alacritty.toml` - конфигурация терминального эмулятора Alacritty с настройками темы, шрифтов и горячих клавиш
 
 #### Утилиты
 
--   `.config/neofetch/config.conf` - настройки Neofetch для отображения информации о системе
+- `.config/neofetch/config.conf` - настройки Neofetch для отображения информации о системе
 
 ## Основные возможности
 
 1. **Оптимизированный ZSH**:
-
     - Тема robbyrussell
     - Плагины: git, syntax-highlighting, autosuggestions, completions
     - Удобные алиасы для часто используемых команд
 
 2. **Настроенный Alacritty**:
-
     - Тема Kanagawa Dragon
     - Шрифт Hack Nerd Font
     - Оптимизированные горячие клавиши
@@ -229,18 +227,17 @@ custom-settings/
 
 ## Системные требования
 
--   Linux-система (включая WSL)
--   Установленный ZSH
--   Oh-My-ZSH
--   Alacritty (опционально)
--   Neofetch (опционально)
+- Linux-система (включая WSL)
+- Установленный ZSH
+- Oh-My-ZSH
+- Alacritty (опционально)
+- Neofetch (опционально)
 
 ## Устранение проблем
 
 Если у вас возникли проблемы при установке или использовании конфигурации, проверьте следующее:
 
 1. **Шрифты отображаются некорректно**:
-
     - Установите шрифт Hack Nerd Font: `sudo apt install fonts-hack-ttf` (для Debian/Ubuntu)
     - Для других дистрибутивов скачайте шрифт с [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
 
