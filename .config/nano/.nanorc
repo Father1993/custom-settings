@@ -48,6 +48,8 @@ color green "\".*\""
 color cyan "#.*$"
 color yellow "\b[0-9]+\b"
 
+
+
 syntax "javascript" "\.js$" "\.ts$"
 color brightgreen "^(function|const|let|var|return|if|else|for|while|try|catch|class|export|import)$"
 color green "\".*\""
@@ -58,6 +60,8 @@ color green "\".*\""
 color yellow ":"
 color cyan "true|false|null"
 color brightwhite "[0-9]+"
+
+
 
 syntax "html" "\.html$" "\.htm$"
 color brightgreen "<[^>]*>"
@@ -72,6 +76,7 @@ color cyan "//.*$"
 syntax "xml" "\.xml$"
 color brightgreen "<[^>]*>"
 color green "\".*\""
+
 
 # C/C++
 syntax "c" "\.c$" "\.cpp$" "\.h$"
@@ -100,6 +105,7 @@ color green "--.*$"
 syntax "docker" "Dockerfile.*" "\.dockerfile$"
 color brightgreen "^(FROM|RUN|CMD|ENTRYPOINT|EXPOSE|ENV|ARG|WORKDIR)$"
 color green "#.*$"
+
 
 # Makefile
 syntax "makefile" "Makefile.*" "\.mk$"
