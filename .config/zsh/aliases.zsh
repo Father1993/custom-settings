@@ -1,6 +1,6 @@
 #Navigation
 alias n=vim
-alias open=explorer.exe
+alias open='explorer.exe . '
 alias cp='cp -i'
 alias mv='mv -i'
 alias myip='curl ifconfig.me'
