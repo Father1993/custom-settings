@@ -23,6 +23,8 @@ set backup
 set historylog
 set multibuffer
 
+# === ЦВЕТА В СТИЛЕ ХАКЕРА ===
+
 # Основные цвета матрицы
 set titlecolor bold,green,black
 set statuscolor green,black
