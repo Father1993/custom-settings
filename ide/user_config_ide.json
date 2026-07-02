@@ -1,0 +1,38 @@
+{
+    "window.autoDetectColorScheme": true,
+    "terminal.external.windowsExec": "C:\\Program Files\\Git\\git-bash.exe",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmPasteNative": false,
+    "editor.wordWrap": "on",
+    "editor.lineNumbers": "on",
+    // --- ОТКЛЮЧЕНИЕ ПАДДИНГОВ, МАРДЖИНОВ И ОТСТУПОВ ---
+    "editor.padding.top": 0, // Убирает верхний отступ в редакторе
+    "editor.padding.bottom": 0, // Убирает нижний отступ в редакторе
+    "editor.glyphMargin": false, // Отключает левое боковое поле
+    "editor.folding": false, // Отключает стрелочки свёртывания кода
+    "editor.lineDecorationsWidth": 10,
+    "editor.minimap.enabled": false,
+    "editor.lightbulb.enabled": "off",
+    // --- СТИЛЬ И УДОБСТВО ---
+    "editor.cursorBlinking": "smooth", // Плавное затухание курсора (меньше бьет по глазам)
+    "editor.cursorSmoothCaretAnimation": "on", // Плавное движение курсора при печати (очень приятный эффект)
+    "editor.fontLigatures": true, // Включает лигатуры (если шрифт поддерживает, например Fira Code)
+    "workbench.editor.showTabs": "multiple", // Оставляем вкладки, но если хотите скрыть и их — поставьте "single"
+    "workbench.statusBar.visible": true, // Оставляем строку состояния
+    "files.trimTrailingWhitespace": true, // Автоматически удаляет невидимые пробелы в конце строк при сохранении
+    "files.insertFinalNewline": true, // Всегда добавляет пустую строку в конец файла (стандарт для Git)
+    "files.trimFinalNewlines": true, // Удаляет лишние пустые строки в самом конце файла
+    "editor.inlineSuggest.enabled": true, // Включает показ AI-подсказок прямо в коде в реальном времени
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "off", // Отключает навязчивый автокомплит внутри комментариев
+        "strings": "on"
+    },
+    "editor.smoothScrolling": true, // Плавный скролл кода колесиком мыши
+    "workbench.list.smoothScrolling": true, // Плавный скролл в дереве файлов (слева)
+    "editor.formatOnSave": true, // Автоматически форматирует код (Prettier/ESLint) при сохранении
+    "editor.linkedEditing": true, // При изменении HTML/XML тега автоматически меняется парный тег
+    "editor.bracketPairColorization.enabled": true, // Раскрашивает парные скобки в разные цвета (очень помогает без линий)
+}
